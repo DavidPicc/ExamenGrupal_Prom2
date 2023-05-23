@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BulletLevel1
+  - PlayerLevel1
+  - EnemyLevel1
   layers:
   - Default
   - TransparentFX
