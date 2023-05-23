@@ -12,11 +12,13 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI click;
+    public TextMeshProUGUI click;
     [SerializeField]
     private Button ButtonLevel;
     [SerializeField]
     private String Nivel;
+    [SerializeField]
+    public  int NumClick;
 
     public Button levelButton
     {
@@ -30,6 +32,12 @@ public class LevelController : MonoBehaviour
     public void LoadLevel(string nivel)
     {
         SceneManager.LoadScene(nivel);
+    }
+    public void ClickUpdate()
+    {
+        NumClick++;
+
+        click.text = NumClick.ToString();
     }
 }
 
