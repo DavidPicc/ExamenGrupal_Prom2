@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class MenuManager : MonoBehaviour
 {
     public static MenuManager instance;
+    public ClickController Click;
     [SerializeField]
     private  List<LevelController> Levels;
     private void Awake()
@@ -14,6 +15,8 @@ public class MenuManager : MonoBehaviour
          foreach(var Levels in Levels)
         {
             Levels.levelButton.onClick.AddListener(() => Levels.LoadLevel());
+            Click.click++;
+            
         }
        
 

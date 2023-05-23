@@ -6,8 +6,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
+
 [Serializable]
-public class LevelController 
+public class LevelController : MonoBehaviour
 {
     [SerializeField]
     private Button ButtonLevel;
