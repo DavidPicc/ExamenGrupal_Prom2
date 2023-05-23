@@ -2045,6 +2045,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e05c8f225cc1f498d85bc664fd8d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Levels:
+  - ButtonLevel: {fileID: 2144785830}
+    Nivel: Level 1
+  - ButtonLevel: {fileID: 2123109896}
+    Nivel: Level2
+  - ButtonLevel: {fileID: 1038879329}
+    Nivel: Level 3
+  - ButtonLevel: {fileID: 1109670599}
+    Nivel: Creditos
 --- !u!4 &1490698429
 Transform:
   m_ObjectHideFlags: 0
