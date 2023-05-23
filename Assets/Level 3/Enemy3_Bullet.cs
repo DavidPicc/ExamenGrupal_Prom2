@@ -20,7 +20,10 @@ public class Enemy3_Bullet : MonoBehaviour
     {
         if(other.CompareTag("Player") || other.CompareTag("Wall"))
         {
-            // PERDIÓ.
+            if(other.CompareTag("Player"))
+            {
+                FindObjectOfType<LevelController>().LoadLevel("Defeat_D");
+            }
             Destroy(gameObject);
         }
     }
