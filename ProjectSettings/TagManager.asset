@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - BulletLevel1
   - PlayerLevel1
   - EnemyLevel1
+=======
+  - Wall
+>>>>>>> 1cc9a52bce983322e7a0be39df2296139e804f39
   layers:
   - Default
   - TransparentFX
