@@ -1015,9 +1015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e59e6cd0ea56b24db4685165f6b520a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 944675405}
-  delay: 10
   sceneName: Level2
+  delay: 10
+  timeBar: {fileID: 944675405}
 --- !u!1 &691618638
 GameObject:
   m_ObjectHideFlags: 0
