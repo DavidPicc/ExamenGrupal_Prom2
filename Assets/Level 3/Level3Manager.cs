@@ -22,5 +22,9 @@ public class Level3Manager : MonoBehaviour
     public void UpdateBulletText()
     {
         bulletsText.text = "Bullets: " + bulletsLeft.ToString();
+        if(bulletsLeft <= 0 )
+        {
+            FindObjectOfType<LevelController>().LoadLevel("Victory_D");
+        }
     }
 }
