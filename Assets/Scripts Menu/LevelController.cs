@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 
@@ -10,6 +11,8 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class LevelController : MonoBehaviour
 {
+    [SerializeField]
+    private TextMeshProUGUI click;
     [SerializeField]
     private Button ButtonLevel;
     [SerializeField]
