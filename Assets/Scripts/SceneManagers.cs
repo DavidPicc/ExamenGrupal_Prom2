@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SceneManager : MonoBehaviour
+public class SceneManagers : MonoBehaviour
 {
     [SerializeField] private GameObject pantallaMenu;
     [SerializeField] private GameObject pantallaDerrota;

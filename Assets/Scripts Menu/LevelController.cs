@@ -12,7 +12,7 @@ public class LevelController
     [SerializeField]
     private Button ButtonLevel;
     [SerializeField]
-    private int Nivel;
+    private String Nivel;
 
     public Button levelButton
     {
@@ -20,7 +20,7 @@ public class LevelController
     }
     public void LoadLevel()
     {
-        SceneManager.LoadScene("Level" + Nivel);
+        SceneManager.LoadScene(Nivel);
     }
 }
 
