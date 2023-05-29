@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 
 public class MenuManager : MonoBehaviour
 {
     public static MenuManager instance;
-  
+    public ClickController Click;
     [SerializeField]
     private  List<LevelController> Levels;
     private void Awake()
@@ -16,7 +15,8 @@ public class MenuManager : MonoBehaviour
          foreach(var Levels in Levels)
         {
             Levels.levelButton.onClick.AddListener(() => Levels.LoadLevel());
-            Levels.levelButton.onClick.AddListener(() => Levels.ClickUpdate());
+            Click.click++;
+            
         }
        
 
@@ -26,6 +26,6 @@ public class MenuManager : MonoBehaviour
         return instance;
     }
     
-
+  
 }
 

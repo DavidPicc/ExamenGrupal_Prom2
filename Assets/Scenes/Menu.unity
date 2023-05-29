@@ -669,7 +669,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click: 0'
+  m_text: 'Click:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -804,7 +804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click: 0 '
+  m_text: 'Click:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1233,7 +1233,6 @@ GameObject:
   - component: {fileID: 1038879331}
   - component: {fileID: 1038879330}
   - component: {fileID: 1038879329}
-  - component: {fileID: 1038879332}
   m_Layer: 5
   m_Name: Nivel 3
   m_TagString: Untagged
@@ -1344,22 +1343,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038879327}
   m_CullTransparentMesh: 1
---- !u!114 &1038879332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038879327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c2f393db9dde440bfdfa6ede8b80e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  click: {fileID: 579603321}
-  ButtonLevel: {fileID: 1038879329}
-  Nivel: Level 3
-  NumClick: 0
 --- !u!1 &1042634670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,7 +1469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click: 0'
+  m_text: 'Click:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1575,7 +1558,6 @@ GameObject:
   - component: {fileID: 1109670601}
   - component: {fileID: 1109670600}
   - component: {fileID: 1109670599}
-  - component: {fileID: 1109670602}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -1686,22 +1668,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109670597}
   m_CullTransparentMesh: 1
---- !u!114 &1109670602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109670597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c2f393db9dde440bfdfa6ede8b80e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  click: {fileID: 262167962}
-  ButtonLevel: {fileID: 1109670599}
-  Nivel: EscenaPaolo
-  NumClick: 0
 --- !u!1 &1205658041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +1940,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217870150}
   m_CullTransparentMesh: 1
+--- !u!1 &1385100199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1385100200}
+  m_Layer: 0
+  m_Name: ClickManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1385100200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385100199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 372, y: 209, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1388511425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,10 +2077,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Levels:
-  - {fileID: 2144785834}
-  - {fileID: 2123109899}
-  - {fileID: 1038879332}
-  - {fileID: 1109670602}
+  - ButtonLevel: {fileID: 2144785830}
+    Nivel: Level 1
+  - ButtonLevel: {fileID: 2123109896}
+    Nivel: Level2
+  - ButtonLevel: {fileID: 1038879329}
+    Nivel: Level 3
+  - ButtonLevel: {fileID: 1109670599}
+    Nivel: ' Escena Paolo'
 --- !u!4 &1490698429
 Transform:
   m_ObjectHideFlags: 0
@@ -2292,7 +2293,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click:  0'
+  m_text: 'Click:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2735,7 +2736,6 @@ GameObject:
   - component: {fileID: 2123109898}
   - component: {fileID: 2123109897}
   - component: {fileID: 2123109896}
-  - component: {fileID: 2123109899}
   m_Layer: 5
   m_Name: Nivel 2
   m_TagString: Untagged
@@ -2846,22 +2846,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123109894}
   m_CullTransparentMesh: 1
---- !u!114 &2123109899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123109894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c2f393db9dde440bfdfa6ede8b80e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  click: {fileID: 676939783}
-  ButtonLevel: {fileID: 2123109896}
-  Nivel: Level2
-  NumClick: 0
 --- !u!1 &2129566453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3011,7 +2995,6 @@ GameObject:
   - component: {fileID: 2144785832}
   - component: {fileID: 2144785831}
   - component: {fileID: 2144785830}
-  - component: {fileID: 2144785834}
   m_Layer: 5
   m_Name: 'Nivel 1 '
   m_TagString: Untagged
@@ -3122,19 +3105,3 @@ RectTransform:
   m_AnchoredPosition: {x: -260.3, y: 62.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2144785834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2144785829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c2f393db9dde440bfdfa6ede8b80e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  click: {fileID: 1634454360}
-  ButtonLevel: {fileID: 2144785830}
-  Nivel: Level 1
-  NumClick: 0
