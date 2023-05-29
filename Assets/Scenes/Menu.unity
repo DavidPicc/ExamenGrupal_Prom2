@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1233,6 +1233,7 @@ GameObject:
   - component: {fileID: 1038879331}
   - component: {fileID: 1038879330}
   - component: {fileID: 1038879329}
+  - component: {fileID: 1038879332}
   m_Layer: 5
   m_Name: Nivel 3
   m_TagString: Untagged
@@ -1304,19 +1305,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1038879330}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1490698427}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1038879330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,6 +1344,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038879327}
   m_CullTransparentMesh: 1
+--- !u!114 &1038879332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038879327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c2f393db9dde440bfdfa6ede8b80e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  click: {fileID: 579603321}
+  ButtonLevel: {fileID: 1038879329}
+  Nivel: Level 3
 --- !u!1 &1042634670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,6 +1574,7 @@ GameObject:
   - component: {fileID: 1109670601}
   - component: {fileID: 1109670600}
   - component: {fileID: 1109670599}
+  - component: {fileID: 1109670602}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -1641,19 +1646,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1109670600}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1490698427}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1109670600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1692,6 +1685,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109670597}
   m_CullTransparentMesh: 1
+--- !u!114 &1109670602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109670597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c2f393db9dde440bfdfa6ede8b80e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  click: {fileID: 262167962}
+  ButtonLevel: {fileID: 1109670599}
+  Nivel: EscenaPaolo
 --- !u!1 &1205658041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,10 +2109,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Levels:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2144785834}
+  - {fileID: 2123109899}
+  - {fileID: 1038879332}
+  - {fileID: 1109670602}
 --- !u!4 &1490698429
 Transform:
   m_ObjectHideFlags: 0
@@ -2756,6 +2764,7 @@ GameObject:
   - component: {fileID: 2123109898}
   - component: {fileID: 2123109897}
   - component: {fileID: 2123109896}
+  - component: {fileID: 2123109899}
   m_Layer: 5
   m_Name: Nivel 2
   m_TagString: Untagged
@@ -2827,19 +2836,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2123109897}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1490698427}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2123109897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2878,6 +2875,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123109894}
   m_CullTransparentMesh: 1
+--- !u!114 &2123109899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123109894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c2f393db9dde440bfdfa6ede8b80e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  click: {fileID: 676939783}
+  ButtonLevel: {fileID: 2123109896}
+  Nivel: Level2
 --- !u!1 &2129566453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3027,6 +3039,7 @@ GameObject:
   - component: {fileID: 2144785832}
   - component: {fileID: 2144785831}
   - component: {fileID: 2144785830}
+  - component: {fileID: 2144785834}
   m_Layer: 5
   m_Name: 'Nivel 1 '
   m_TagString: Untagged
@@ -3077,19 +3090,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2144785831}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1490698427}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2144785831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3149,3 +3150,18 @@ RectTransform:
   m_AnchoredPosition: {x: -260.3, y: 62.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2144785834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144785829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c2f393db9dde440bfdfa6ede8b80e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  click: {fileID: 1634454360}
+  ButtonLevel: {fileID: 2144785830}
+  Nivel: Level 1

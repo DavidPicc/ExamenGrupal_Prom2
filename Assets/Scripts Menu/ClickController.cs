@@ -6,4 +6,5 @@ public class ClickController
 {
     public int click;
 
+
 }

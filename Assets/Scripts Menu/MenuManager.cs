@@ -15,7 +15,7 @@ public class MenuManager : MonoBehaviour
          foreach(var Levels in Levels)
         {
             Levels.levelButton.onClick.AddListener(() => Levels.LoadLevel());
-            Click.click++;
+            
             
         }
        

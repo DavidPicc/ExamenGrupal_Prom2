@@ -18,6 +18,8 @@ public class LevelController : MonoBehaviour
     [SerializeField]
     private String Nivel;
 
+    public int NumClick;
+
     public Button levelButton
     {
         get{ return ButtonLevel; }
@@ -30,6 +32,12 @@ public class LevelController : MonoBehaviour
     public void LoadLevel(string nivel)
     {
         SceneManager.LoadScene(nivel);
+    }
+    public void ClickUpdate()
+    {
+        NumClick++;
+
+        click.text = NumClick.ToString();
     }
 }
 
